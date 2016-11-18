@@ -23,9 +23,9 @@ if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo 
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo 跳出視窗後請直接按下確定
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo.
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 pause
-if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 wget --no-check-certificate https://minecraft.tdcweb.xyz/dl/forge-1.10.2-12.18.2.2125-installer.jar
+if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 curl -o forge-1.10.2-12.18.2.2125-installer.jar https://minecraft.tdcweb.xyz/dl/forge-1.10.2-12.18.2.2125-installer.jar
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 java -jar forge-1.10.2-12.18.2.2125-installer.jar
-
+cls
 echo 模組包下載ing...
 curl -o update.zip -L "https://o365chna-my.sharepoint.com/personal/b0417074_o365_cnu_edu_tw/_layouts/15/guestaccess.aspx?guestaccesstoken=HBGVOO6rC6A33ZySL%2bazPbkYjFz%2fpOrDtwhik%2fYeIsg%3d&docid=0be8de02e0ec746648f62d4b3998c42de&rev=1"
 
