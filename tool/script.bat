@@ -13,13 +13,15 @@ echo.
 echo +###########################################+
 pause
 
+wget --no-check-certificate https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/tool/curl.exe -O curl.exe
 curl -s -o 更新.bat https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/tool/update.bat
 copy 更新.bat ..
 del /Q 更新.bat
-
+cls
 echo 安裝froge~
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo 偵測尚未安裝forge 2125
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo 跳出視窗後請直接按下確定
+if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo.
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 pause
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 wget --no-check-certificate https://minecraft.tdcweb.xyz/dl/forge-1.10.2-12.18.2.2125-installer.jar
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 java -jar forge-1.10.2-12.18.2.2125-installer.jar
