@@ -2,10 +2,9 @@
 cls
 echo +###########################################+
 echo.
-echo                現在版本 Beta v1.0
+echo                現在版本 Beta v1.1
 echo                     更新內容
-echo                   全面改用cURL
-echo                 直接新增一季囉:3
+echo                     新增模組
 echo          以後 update.bat 改叫 更新.bat 囉
 echo.
 echo          詳細內容請上minecraft.tdcweb.xyz
@@ -27,7 +26,7 @@ if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 curl 
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 java -jar forge-1.10.2-12.18.2.2125-installer.jar
 
 echo 模組包下載ing...
-curl -o update.zip "https://minecraft.tdcweb.xyz/dl/update.zip"
+curl -o update.zip "https://minecraft.tdcweb.xyz/dl/update2.zip"
 
 echo 清除舊模組包ing...
 rd /S/Q %appdata%\.minecraft\mods
