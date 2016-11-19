@@ -14,7 +14,7 @@ echo +###########################################+
 pause
 
 wget --no-check-certificate -q https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/tool/curl.exe -O curl.exe
-curl -s -o 更新.bat https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/update.bat
+curl -s -o 更新.bat https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/更新.bat
 copy 更新.bat ..
 del /Q 更新.bat
 cls
