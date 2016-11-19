@@ -13,7 +13,7 @@ echo.
 echo +###########################################+
 pause
 
-wget --no-check-certificate https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/tool/curl.exe -O curl.exe
+wget --no-check-certificate -q https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/tool/curl.exe -O curl.exe
 curl -s -o 更新.bat https://raw.githubusercontent.com/tasi788/TDCsMineServer-1Click/master/update.bat
 copy 更新.bat ..
 del /Q 更新.bat
@@ -25,9 +25,9 @@ if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 echo.
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 pause
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 curl -o forge-1.10.2-12.18.2.2125-installer.jar https://minecraft.tdcweb.xyz/dl/forge-1.10.2-12.18.2.2125-installer.jar
 if not exist %appdata%\.minecraft\versions\1.10.2-forge1.10.2-12.18.2.2125 java -jar forge-1.10.2-12.18.2.2125-installer.jar
-cls
+
 echo 模組包下載ing...
-curl -o update.zip -L "https://o365chna-my.sharepoint.com/personal/b0417074_o365_cnu_edu_tw/_layouts/15/guestaccess.aspx?guestaccesstoken=HBGVOO6rC6A33ZySL%2bazPbkYjFz%2fpOrDtwhik%2fYeIsg%3d&docid=0be8de02e0ec746648f62d4b3998c42de&rev=1"
+curl -o update.zip "https://minecraft.tdcweb.xyz/dl/update.zip"
 
 echo 清除舊模組包ing...
 rd /S/Q %appdata%\.minecraft\mods
